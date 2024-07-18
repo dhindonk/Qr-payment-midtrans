@@ -10,4 +10,11 @@ class Transactions extends Model
     use HasFactory;
 
     protected $guarded = [];
+
+    protected $fillable = [
+        'invoice_number',
+        'amount',
+        'status',
+        'qr_code', 
+    ];
 }

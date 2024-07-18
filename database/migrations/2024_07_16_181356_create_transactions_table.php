@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('invoice_number');
             $table->bigInteger('amount');
             $table->string('status');
+            $table->string('qr_code')->nullable(); 
             $table->timestamps();
         });
     }
